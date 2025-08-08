@@ -1,0 +1,40 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "include": [
+    "**/*",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "dist"
+  ],
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  }
+}

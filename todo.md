@@ -1,0 +1,19 @@
+- [x] Update header to be sticky
+- [ ] Setup intro animation w container outlines (ty)
+- [x] Standardize the diagram components
+- [x] New features section
+- [ ] Improve svg animation for features (ty)
+- [ ] Setup diagrams for all products (ty)
+- [x] svg graphics + animations for products (julien)
+- [x] Setup Solutions pages
+- [x] Pricing page
+- [x] Standardize explore tab component (product pages) (julien)
+- [x] Standardize button component (julien)
+- [ ] Proper links for everything (ty)
+- [ ] Proper icons for everything (ty)
+- [x] Fix BackgroundLines when screen resized
+- [ ] General cleanup
+- [x] Update navigation on mobile (julien)
+- [ ] Polish navigation on mobile (ty)
+- [x] add responsive font (julien)
+- [x] Add code snippet as optional field to templated products (under features, above customers) (julien)

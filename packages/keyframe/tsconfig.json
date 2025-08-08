@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ESNext",
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "outDir": "dist",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "baseUrl": ".",
+    "paths": {}
+  },
+  "include": ["src/**/*"]
+}
+
+

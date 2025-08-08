@@ -1,0 +1,60 @@
+{
+  "name": "@tjcages/keyframe",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Declarative GSAP-based motion primitives for React (keyframe.div, keyframe.h1, etc.)",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "prepublishOnly": "pnpm build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:tjcages/keyframe.git"
+  },
+  "homepage": "https://github.com/tjcages/keyframe#readme",
+  "bugs": {
+    "url": "https://github.com/tjcages/keyframe/issues"
+  },
+  "keywords": [
+    "react",
+    "animation",
+    "gsap",
+    "motion",
+    "keyframe",
+    "ui"
+  ],
+  "author": "@tjcages",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.8.3"
+  }
+}
