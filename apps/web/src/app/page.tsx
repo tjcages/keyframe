@@ -1,4 +1,4 @@
-import Hero from "@/components/home/hero/Hero"
+import { Hero } from "@/components/home/hero"
 
 export default function Page() {
   return (
@@ -7,5 +7,3 @@ export default function Page() {
     </main>
   )
 }
-
-

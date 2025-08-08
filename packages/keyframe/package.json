@@ -1,6 +1,6 @@
 {
   "name": "@tjcages/keyframe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "description": "Declarative GSAP-based motion primitives for React (keyframe.div, keyframe.h1, etc.)",
@@ -20,7 +20,10 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "release:patch": "npm version patch && pnpm build && npm publish --access public",
+    "release:minor": "npm version minor && pnpm build && npm publish --access public",
+    "release:major": "npm version major && pnpm build && npm publish --access public"
   },
   "publishConfig": {
     "access": "public"
@@ -28,7 +31,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:tjcages/keyframe.git"
+    "url": "git+ssh://git@github.com/tjcages/keyframe.git"
   },
   "homepage": "https://github.com/tjcages/keyframe#readme",
   "bugs": {
