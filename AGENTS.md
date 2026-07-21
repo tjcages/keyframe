@@ -16,3 +16,20 @@ Milestones: `Library foundation` (library shipped) · `Showcase site` (active de
 - **Close the loop before ending a session** — update issue state/comments for any tracked work before finishing.
 - Prefer Linear’s generated branch names.
 - Commit to **main** until this product has real users (then use a branch/PR).
+
+## Parallel agents (worktrees)
+
+When ≥2 agents touch this repo, isolate — do not share one working tree.
+
+1. **Own branch + worktree** off `main` (prefer Linear branch name when tracked).
+2. **Share env:** `bash scripts/worktree.sh setup` (symlinks only; this repo uses an empty `worktree.share`).
+3. **Own preview** on an auto-chosen port if running `dev` / `dev:web` — never hardcode 3000/5173.
+4. **Claim** the task/files you own; clear the claim when done.
+5. **Land from main:** `bash scripts/worktree.sh land <branch>` then `git push origin main` (or open a PR if the repo requires it).
+6. **Teardown:** `bash scripts/worktree.sh teardown ../keyframe-<slug> <branch>` — stop your preview first.
+
+Status line on every agent message:
+
+`🔌 <branch> · <one-line task> · <preview URL or n/a>`
+
+Full method: skills pack `agent-worktrees` (methodology in the skills monorepo).
