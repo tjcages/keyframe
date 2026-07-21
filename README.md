@@ -1,5 +1,7 @@
 # Keyframe Animation System
 
+> Constitution: [`docs/north-star.md`](./docs/north-star.md) — product laws agents and contributors judge features against.
+
 A declarative motion primitives framework for React, built on GSAP.
 
 - Semantic component API: use `keyframe.div`, `keyframe.h1`, `keyframe.button`, etc.

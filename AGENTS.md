@@ -1,5 +1,9 @@
 # keyframe — agent instructions
 
+**👉 Read [`docs/north-star.md`](./docs/north-star.md) FIRST** — the product constitution. When it conflicts with anything else, the north star wins.
+
+Before designing or shipping an API/default/adapter/demo, run the decision checklist at the bottom of that doc. If an answer breaks a Creed line, stop.
+
 ## Linear tracking (non-negotiable)
 
 Every agent, every session. Linear workspace: **team "Off-brand"**, **project "keyframe"**.
